@@ -7,6 +7,7 @@ class Product {
     protected $name;
     protected $price;
     protected $animalCategory;
+    protected $discount;
 
     public function __construct($name, $price, $animalCategory) {
         $this->name = $name;
@@ -45,4 +46,17 @@ class Product {
     public function getAnimalCategory() {
         return $this->animalCategory;
     }
+
+    // set e get discount
+    public function setDiscount($discount) {
+        $this->discount = $discount;
+        return $this;
+    }
+    
+    public function getDiscount($_discount) {
+        $discount = $this->price * $_discount / 100;
+        $this->price = $this->price - $discount;
+    }
+
+
 }

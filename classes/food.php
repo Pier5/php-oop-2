@@ -24,4 +24,5 @@ class Food extends Product {
     public function getQuantity() {
         return $this->quantity;
     }
+    
 }

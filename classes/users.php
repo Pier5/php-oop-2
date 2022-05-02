@@ -7,7 +7,7 @@ class User {
     protected $surname;
 
     private $discount = 0;
-
+    
     public function __construct($name, $surname) {
         $this->name = $name;
         $this->surname = $surname;
@@ -27,15 +27,15 @@ class User {
 
 
     // set e get discount
-
     public function setDiscount($discount) {
         $this->discount = $discount;
         return $this;
     }
-
+    
     public function getDiscount() {
         return $this->discount;
     }
 
-
 }
+
+
