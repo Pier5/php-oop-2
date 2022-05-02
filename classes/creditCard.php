@@ -49,9 +49,9 @@ class CreditCard {
 
     //set e get expirationDate
     public function setExpirationDate($expirationDate) {
-        $today = date('m/Y');
+        $today = date('Y-m-d');
 
-        // var_dump($today, $expirationDate);
+        var_dump($today, $expirationDate);
 
         if ($expirationDate > $today) {
             $this->$expirationDate = $expirationDate;

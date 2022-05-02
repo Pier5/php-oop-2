@@ -14,10 +14,10 @@ include_once __DIR__ . '/classes/creditCard.php';
 
 $user1 = new User('Gino', 'Paoli');
 $user2 = new Member('Ciccio', 'Graziani', 'GrCiccio202', 123456);
-$userCard = new CreditCard('Ciccio', 'Graziani', 1234567891234, '05/2025', 333);
-$userCard->setExpirationDate('05/2025');
-$userCard2 = new CreditCard('Paolo', 'Rossi', 12345233334, '05/2021', 124);
-$userCard2->setExpirationDate('05/2021');
+$userCard = new CreditCard('Ciccio', 'Graziani', 1234567891234, '2022-05-03', 333);
+$userCard->setExpirationDate('2022-05-03');
+$userCard2 = new CreditCard('Paolo', 'Rossi', 12345233334, '2021-01-05', 124);
+$userCard2->setExpirationDate('2021-01-05');
 $croquettes = new Food ('Crocchette', 12.50, 'cane', 'brand inventato', '200grammi');
 $croquettes->getDiscount(20);
 
