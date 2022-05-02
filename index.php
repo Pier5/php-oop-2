@@ -14,9 +14,9 @@ include_once __DIR__ . '/classes/creditCard.php';
 
 $user1 = new User('Gino', 'Paoli');
 $user2 = new Member('Ciccio', 'Graziani', 'GrCiccio202', 123456);
-$userCard = new CreditCard('Ciccio', 'Graziani', 1234567891234, '2022-05-03', 333);
-$userCard->setExpirationDate('2022-05-03');
-$userCard2 = new CreditCard('Paolo', 'Rossi', 12345233334, '2021-01-02', 124);
+$userCard = new CreditCard('Ciccio', 'Graziani', 1234567891234, '2022-07-03', 333);
+$userCard->setExpirationDate('2022-07-03');
+$userCard2 = new CreditCard('Paolo', 'Rossi', 12345233334, '2022-05-02', 124);
 $userCard2->setExpirationDate('2022-05-02');
 $croquettes = new Food ('Crocchette', 12.50, 'cane', 'brand inventato', '200grammi');
 $croquettes->getDiscount(20);
