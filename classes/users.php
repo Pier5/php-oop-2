@@ -1,12 +1,14 @@
 <?php 
 
+include_once  __DIR__ . '/products.php';
 class User {
-    private $name;
-    private $surname;
+    protected $name;
+    protected $surname;
+
     private $cellphone;
     private $mail;
     private $dateOfBirth;
-    private $discount = 20;
+    private $discount = 0;
 
     public function __construct($name, $surname) {
         $this->name = $name;
