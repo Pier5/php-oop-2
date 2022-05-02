@@ -5,7 +5,7 @@ class PetBed extends Product {
     protected $size;
 
     public function __construct($name, $price, $animalCategory, $brand, $size) {
-        Product::__construct($name, $price, $animalCategory);
+        parent::__construct($name, $price, $animalCategory);
         $this->brand = $brand;
         $this->size = $size;
     }

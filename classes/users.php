@@ -1,6 +1,5 @@
 <?php 
 
-include_once  __DIR__ . '/products.php';
 include_once  __DIR__ . '/registeredUsers.php';
 class User {
     protected $name;

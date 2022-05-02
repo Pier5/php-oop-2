@@ -1,5 +1,4 @@
 <?php
-
 class Member extends User {
     protected $userName;
     protected $password;
@@ -10,7 +9,7 @@ class Member extends User {
     private $discount = 20;
 
     public function __construct($name, $surname, $userName, $password) {
-        User::__construct($name, $surname);
+        parent::__construct($name, $surname);
         $this->userName = $userName;
         $this->password = $password;
     }
@@ -61,4 +60,5 @@ class Member extends User {
     public function getDiscount() {
         return $this->discount;
     }
+
 }
