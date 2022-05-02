@@ -4,9 +4,9 @@ include_once  __DIR__ . '/food.php';
 include_once  __DIR__ . '/petBed.php';
 
 class Product {
-    private $name;
-    private $price;
-    private $animalCategory;
+    protected $name;
+    protected $price;
+    protected $animalCategory;
 
     public function __construct($name, $price, $animalCategory) {
         $this->name = $name;
