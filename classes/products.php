@@ -56,6 +56,7 @@ class Product {
     public function getDiscount($_discount) {
         $discount = $this->price * $_discount / 100;
         $this->price = $this->price - $discount;
+        return $this->price;
     }
 
 
