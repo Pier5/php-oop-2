@@ -3,11 +3,11 @@
 include_once  __DIR__ . '/food.php';
 include_once  __DIR__ . '/petBed.php';
 
-class Product {
+ class Product {
     protected $name;
     protected $price;
     protected $animalCategory;
-    protected $discount;
+    private $discount;
 
     public function __construct($name, $price, $animalCategory) {
         $this->name = $name;
@@ -48,15 +48,13 @@ class Product {
     }
 
     // set e get discount
-    public function setDiscount($discount) {
-        $this->discount = $discount;
-        return $this;
-    }
-    
-    public function getDiscount($_discount) {
+    public function setDiscount($_discount) {
         $discount = $this->price * $_discount / 100;
         $this->price = $this->price - $discount;
-        return $this->price;
+    }
+    
+    public function getDiscount() {
+        return $this->discount;
     }
 
 

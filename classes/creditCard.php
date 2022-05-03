@@ -1,15 +1,14 @@
 <?php
 
-class CreditCard extends User {
-    private $holderName;
-    private $holderSurname;
-    private $cardNumber;
+class CreditCard  {
+    protected $holderName;
+    protected $holderSurname;
+    protected $cardNumber;
     protected $expirationDate;
-    private $Cvv;
+    protected $Cvv;
 
 
-    public function __construct($name, $surname, $holderName, $holderSurname, $cardNumber, $expirationDate, $Cvv) {
-        parent::__construct($name, $surname);
+    public function __construct($holderName, $holderSurname, $cardNumber, $expirationDate, $Cvv) {
         $this->holderName = $holderName;
         $this->holderSurname = $holderSurname;
         $this->cardNumber = $cardNumber;
