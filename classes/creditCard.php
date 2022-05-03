@@ -1,39 +1,40 @@
 <?php
 
-class CreditCard {
-    private $name;
-    private $surname;
+class CreditCard extends User {
+    private $holderName;
+    private $holderSurname;
     private $cardNumber;
     protected $expirationDate;
     private $Cvv;
 
 
-    public function __construct($name, $surname, $cardNumber, $expirationDate, $Cvv) {
-        $this->name = $name;
-        $this->surname = $surname;
+    public function __construct($name, $surname, $holderName, $holderSurname, $cardNumber, $expirationDate, $Cvv) {
+        parent::__construct($name, $surname);
+        $this->holderName = $holderName;
+        $this->holderSurname = $holderSurname;
         $this->cardNumber = $cardNumber;
         $this->expirationDate = $expirationDate;
         $this->Cvv = $Cvv;
     }
 
-    //set e get name
-    public function setName($name) {
-        $this->name = $name;
+    //set e get holderName
+    public function setHolderName($holderName) {
+        $this->holderName = $holderName;
         return $this;
     }
 
-    public function getName() {
-        return $this->name;
+    public function getHolderName() {
+        return $this->holderName;
     }
 
-    //set e get surname
-    public function setSurname($surname) {
-        $this->surname = $surname;
+    //set e get holderSurname
+    public function setHolderSurname($holderSurname) {
+        $this->holderSurname = $holderSurname;
         return $this;
     }
 
-    public function getSurname() {
-        return $this->surname;
+    public function getHolderSurname() {
+        return $this->holderSurname;
     }
 
     //set e get cardNumber

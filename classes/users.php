@@ -1,6 +1,7 @@
 <?php 
 
 include_once  __DIR__ . '/registeredUsers.php';
+include_once __DIR__ . '/creditCard.php';
 class User {
     protected $name;
     protected $surname;
